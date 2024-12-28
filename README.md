@@ -64,7 +64,11 @@ config.yaml              # Configuration file for hyperparameters
    ```bash
    pip install -r requirements.txt
    ```
-2. Download required resources:
+2. Install the project in editable mode:
+   ```bash
+   pip install -e .
+   ```
+3. Download required resources:
    - Pre-trained GloVe embeddings (`glove-wiki-gigaword-100`).
    - NLTK tokenization data:
      ```python
