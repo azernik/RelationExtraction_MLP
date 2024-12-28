@@ -8,10 +8,12 @@ from torch.utils.data import TensorDataset, DataLoader
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.feature_extraction.text import CountVectorizer
 import gensim.downloader as api
-from src.data_processing import preprocess_data, tokens_to_embedding, build_vocab, split_data
-from src.train import train_model
-from src.evaluate import evaluate_model, predict_and_save
-from src.utils import set_seed, ensure_directory_exists
+from data_processing import preprocess_data, tokens_to_embedding, build_vocab, split_data
+from train import train_model
+from evaluate import evaluate_model, predict_and_save
+from utils import set_seed, ensure_directory_exists
+
+
 
 # Download necessary NLTK data
 nltk.download('punkt')

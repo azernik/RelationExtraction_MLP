@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from src.model import ModelWrapper, MultiLabelMLP
+from model import ModelWrapper, MultiLabelMLP
 
 
 def train_model(train_loader, val_loader, input_size, output_size, dropout_rate, learning_rate, num_epochs, patience):
